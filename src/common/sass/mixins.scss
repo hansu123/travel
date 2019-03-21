@@ -1,0 +1,37 @@
+@mixin title-ellipsis{
+overflow:hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+@mixin text-ellipsis{
+display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin hometitle{
+    width: 100%;
+    background: #eee;
+    font-size: 0.4rem;
+    line-height: 0.3rem;
+    padding: 0.3rem 0;
+    text-align: center;
+}
+
+
+@mixin h-header($position){
+
+position:$position;
+top:0;
+left:0;
+right:0;
+z-index:10;
+padding:0 0.2rem;
+line-height:$headerHeight;
+font-size:0.3rem;
+color:#fff;
+
+}
